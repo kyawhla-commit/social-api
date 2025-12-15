@@ -5,10 +5,10 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "build": "prisma generate && prisma migrate deploy"
+    "build": "prisma generate && prisma db push"
   },
   "engines": {
-    "node": ">=18"
+    "node": "18"
   },
   "dependencies": {
     "@prisma/client": "^6.16.3",
