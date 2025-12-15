@@ -16,6 +16,8 @@ app.use("/posts", postRouter);
 const { commentRouter } = require("./routes/comment.js");
 app.use("/comments", commentRouter);
 
-app.listen(8800, () => {
-    console.log("Social API running at 8800...");
+const PORT = process.env.PORT || 8800;
+
+app.listen(PORT, () => {
+    console.log(`Social API running at ${PORT}...`);
 });
